@@ -51,6 +51,25 @@
             <canvas id="kpi1"></canvas>
           </div>
         </div>
+        <div id="LP2" class="row" style="margin-top: 150px;">
+          <h1 class="title h6">Positive/Negative Response Status</h1>
+          <div class="board align-self-center">
+            <canvas id="kpi3"></canvas>
+          </div>
+        </div>
+        <div id="LP3" class="row linha">
+          <h1 class="title h6">Min / Max Scaled Range</h1>
+          <div class="board align-self-center">
+            <canvas id="kpi5"></canvas>
+          </div>
+        </div>
+        <!--<div id="LP4" class="row linha">
+          <h1 class="title h6">File used to decode</h1>
+          <div class="board align-self-center">
+            <canvas id="kpi9_chart"></canvas>
+          </div>
+        </div>-->
+
 
       </div>
       <div id="colunaP2" class="col-8">
@@ -75,60 +94,42 @@
             </div>
           </div>
         </div>
-
+        <div id="LP2-2" class="row" style="margin-top: 140px;">
+          <div class="col-8">
+            <div class="board-bar-conj">
+              <h1 class="title h6">Total Byte size Error</h1>
+              <canvas id="kpi4_did"></canvas>
+            </div>
+          </div>
+          <div class="col-4">
+            <h1 class="title h6">Total Byte size Check</h1>
+            <div class="board-pie-conj">
+              <canvas id="kpi4"></canvas>
+            </div>
+          </div>
+        </div>
+        <div id="LP3-2" class="row linha">
+          <div class="col-8">
+            <h1 class="title h6">Monitoring between Decoded and Un-decode Messages</h1>
+            <div class="board-bar-conj">
+              <canvas id="kpi7_did"></canvas>
+            </div>
+          </div>
+          <div class="col-4">
+            <h1 class="title h6">Monitoring between Decoded and Un-decode Messages</h1>
+            <div class="board-pie-conj">
+              <canvas id="kpi7"></canvas>
+            </div>
+          </div>
+        </div>
+        <!--<div id="LP4-2" class="row mt-2 ms-1">
+          <h1 class="title h6">File used to decode - stratified</h1>
+          <div class="board align-self-center">
+            <canvas id="kpi9_chart_did"></canvas>
+          </div>
+        </div>-->
       </div>
     </div>
-
-
-    <div class="row linha" style="margin-top: 170px;">
-      <div class="col">
-        <h1 class="title h6">Positive/Negative Response Status</h1>
-        <div class="board align-self-center">
-          <canvas id="kpi3"></canvas>
-        </div>
-      </div>
-      <div class="col">
-        <h1 class="title h6">Min / Max Scaled Range</h1>
-        <div class="board align-self-center">
-          <canvas id="kpi5"></canvas>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row linha">
-      <div class="col-9">
-        <div class="board-bar-conj">
-          <h1 class="title h6">Total Byte size Error</h1>
-          <canvas id="kpi4_did"></canvas>
-        </div>
-      </div>
-      <div class="col-3">
-        <h1 class="title h6">Total Byte size Check</h1>
-        <div class="board-pie-conj">
-          <canvas id="kpi4"></canvas>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row linha">
-      <div class="col-9">
-        <h1 class="title h6">Monitoring between Decoded and Un-decode Messages</h1>
-        <div class="board-bar-conj">
-          <canvas id="kpi7_did"></canvas>
-        </div>
-      </div>
-      <div class="col-3">
-        <h1 class="title h6">Monitoring between Decoded and Un-decode Messages</h1>
-        <div class="board-pie-conj">
-          <canvas id="kpi7"></canvas>
-        </div>
-      </div>
-    </div>
-
-
-
     <div class="row linha">
       <div class="col-9">
         <h1 class="title h6">File used to decode - stratified</h1>
@@ -201,10 +202,10 @@
             <td>Error Parsing Message</td>
             <td>{{kpi2.Error_Parsing_Message}}%</td>
           </tr>
-          <!--<tr>
+          <tr>
             <td>Success</td>
             <td>{{kpi2.Success}}%</td>
-          </tr>-->
+          </tr>
           <tr>
             <td>Negative Response</td>
             <td>{{kpi2.Negative_Response}}%</td>
