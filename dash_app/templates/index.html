@@ -1,0 +1,660 @@
+{% extends "base.html" %}
+
+{% block tabela%}
+<h1 class="title h6">Diagnostic Status</h1>
+<table class="table caption-top">
+    <tbody>
+        <tr>
+            <th style="background: rgb(4, 26, 124, 0.5);">Success</th>
+            <th style="background: rgb(4, 26, 124, 0.5);">Erro</th>
+            <td rowspan="2" style="background: rgba(112, 174, 255, 0.5); vertical-align: middle;"><span id="btn1" onclick="abrirModal(this)" style="cursor:pointer">+</span></td>
+            
+        </tr>
+
+        <tr>
+            <td style="background: rgb(112, 174, 255, 0.5);">{{describe1.success}}%</td>
+            <td style="background: rgb(112, 174, 255, 0.5);">{{describe1.erro}}%</td>
+
+            
+        </tr>
+    </tbody>
+</table>
+{% endblock tabela%}
+
+
+{% block tabela2%}
+<h1 class="title h6">File used to decode</h1>
+<table class="table caption-top">
+    <tbody>
+        <tr>
+            <th style="background: rgb(4, 26, 124, 0.5);">MDX</th>
+            <th style="background: rgb(4, 26, 124, 0.5);">GDX</th>
+            <th style="background: rgb(4, 26, 124, 0.5);">Not Decoded</th>
+            <th style="background: rgb(4, 26, 124, 0.5);">Not Decoded</th>
+        </tr>
+
+        <tr>
+            <td style="background: rgb(112, 174, 255, 0.5);">{{describe2.MDX}}%</td>
+            <td style="background: rgb(112, 174, 255, 0.5);">{{describe2.GDX}}%</td>
+            <td style="background: rgb(112, 174, 255, 0.5);">{{describe2.Not_Decoded}}%</td>
+            
+        </tr>
+    </tbody>
+</table>
+{% endblock tabela2%}
+
+
+
+{% block content %}
+<h1></h1>
+<script type="text/javascript">
+
+    const kpi1_obj = {{ kpi1| safe}}
+
+    const kpi2_obj = {{ kpi2| safe}}
+
+    const kpi3_obj = {{ kpi3| safe}}
+
+    const kpi4_did_obj = {{ kpi4_did| safe}}
+    const kpi4_obj = {{ kpi4| safe}}
+
+    const kpi5_obj = {{ kpi5| safe}}
+
+    const kpi6_obj = {{ kpi6| safe}}
+
+    const kpi7_did_obj = {{ kpi7_did| safe}}
+    const kpi7_obj = {{ kpi7| safe}}
+
+    const kpi8_obj = {{ kpi8| safe}}
+    const kpi8_describe_obj = {{ kpi8_describe| safe}}
+
+    const kpi9_obj = {{ kpi9| safe}}
+    const kpi9_chart_did_obj = {{ kpi9_chart_did| safe}}
+    const kpi9_chart_obj = {{ kpi9_chart| safe}}
+
+
+
+console.log(kpi2_obj)
+
+    const ctx = document.getElementById('kpi1');
+    const myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: kpi1_obj.label,
+            datasets:
+                [
+                    {
+                        data: kpi1_obj.values,
+                        backgroundColor: [
+                        'rgb(255, 148, 18)',
+                        'rgb(0, 125, 10)',
+                        'rgb(145, 145, 145)',
+                        ],
+                        borderColor: [
+                        'rgb(255, 148, 18)',
+                        'rgb(0, 125, 10)',
+                        'rgb(145, 145, 145)',
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+
+            scales: {
+                y: {
+                    grid: {
+                        display: false
+                    },
+                    beginAtZero: true,
+                    ticks: {
+                        display: false
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+
+
+
+
+
+    const ctx3 = document.getElementById('kpi3');
+    const myChart3 = new Chart(ctx3, {
+        type: 'bar',
+        data:
+        {
+            labels: kpi3_obj.did,
+            datasets:
+                [
+                    {
+                        label: 'Negative_Response',
+                        data: kpi3_obj.Negative_Response,
+                        backgroundColor: [
+                        'rgb(255, 148, 18)',
+                        ],
+                        borderColor: [
+                        'rgb(255, 148, 18)',
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Null_Response',
+                        data: kpi3_obj.Null_Response,
+                        backgroundColor: [
+                        'rgb(145, 145, 145)',
+                        ],
+                        borderColor: [
+                        'rgb(145, 145, 145)',
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Positive_Response',
+                        data: kpi3_obj.Positive_Response,
+                        backgroundColor: [
+                        'rgb(0, 125, 10)',
+                        ],
+                        borderColor: [
+                            'rgb(0, 125, 10)',
+                        ],
+                        borderWidth: 1
+                    },
+
+                ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    stacked: true,
+                },
+                x: {
+                    beginAtZero: true,
+                    stacked: true,
+                }
+            }
+        }
+    });
+
+
+
+    const ctx4 = document.getElementById('kpi4');
+    const myChart4 = new Chart(ctx4, {
+        type: 'doughnut',
+        data: {
+            labels: kpi4_obj.label,
+            datasets: [{
+                label: '',
+                data: kpi4_obj.values,
+                backgroundColor: [
+                'rgb(255, 0, 0)',
+                'rgb(8, 0, 255)',
+
+                ],
+                borderColor: [
+                'rgb(255, 0, 0)',
+                'rgb(8, 0, 255)',
+
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    grid: {
+                        display: false
+                    },
+                    beginAtZero: true,
+                    ticks: {
+                        display: false
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+
+
+
+
+    const ctx4_did = document.getElementById('kpi4_did');
+    const myChart4_did = new Chart(ctx4_did, {
+        type: 'bar',
+        data: {
+            labels: kpi4_did_obj.did,
+            datasets:
+                [
+                    {
+                        label: 'Byte_Size_Error',
+                        data: kpi4_did_obj.Byte_Size_Error,
+                        backgroundColor: [
+                        'rgb(255, 0, 0)',
+                        ],
+                        borderColor: [
+                        'rgb(255, 0, 0)',
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'No_Byte_Size_Error',
+                        data: kpi4_did_obj.No_Byte_Size_Error,
+                        backgroundColor: [
+                        'rgb(8, 0, 255)',
+                        ],
+                        borderColor: [
+                        'rgb(8, 0, 255)',
+                        ],
+                        borderWidth: 1
+                    },
+                ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                },
+                x: {
+                    beginAtZero: true,
+                    stacked: true,
+                }
+            }
+        }
+    });
+
+
+
+
+    const ctx5 = document.getElementById('kpi5');
+    const myChart5 = new Chart(ctx5, {
+        type: 'bar',
+        data: {
+            labels: kpi5_obj.did,
+            datasets:
+                [
+                    {
+                        label: 'In_range',
+                        data: kpi5_obj.In_range,
+                        backgroundColor: [
+                        'rgb(8, 0, 255)',
+                        ],
+                        borderColor: [
+                        'rgb(8, 0, 255)',
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Min_Max_Not_Found',
+                        data: kpi5_obj.Min_Max_Not_Found,
+                        backgroundColor: [
+                        'rgb(255, 0, 0)',
+                        ],
+                        borderColor: [
+                        'rgb(255, 0, 0)',
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Not_applicable',
+                        data: kpi5_obj.Not_applicable,
+                        backgroundColor: [
+                        'rgb(145, 145, 145)',
+                        ],
+                        borderColor: [
+                        'rgb(145, 145, 145)',
+                        ],
+                        borderWidth: 1
+                    },
+                ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                },
+                x: {
+                    beginAtZero: true,
+                    stacked: true,
+                }
+            }
+        }
+    });
+
+
+
+
+    const ctx6 = document.getElementById('kpi6');
+    const myChart6 = new Chart(ctx6, {
+        type: 'doughnut',
+        data: {
+            labels: kpi6_obj.label,
+            datasets:
+                [
+                    {
+                        data: kpi6_obj.values,
+                        backgroundColor: [
+                        'rgb(255, 0, 0)',
+                        'rgb(8, 0, 255)',
+                            kpi6_obj.color[2],
+                        ],
+                        borderColor: [
+                        'rgb(255, 0, 0)',
+                        'rgb(8, 0, 255)',
+                            kpi6_obj.color[2],
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    grid: {
+                        display: false
+                    },
+                    beginAtZero: true,
+                    ticks: {
+                        display: false
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+
+
+
+
+    const ctx7 = document.getElementById('kpi7');
+    const myChart7 = new Chart(ctx7, {
+        type: 'doughnut',
+        data: {
+            labels: kpi7_obj.label,
+            datasets:
+                [
+                    {
+                        label: '',
+                        data: kpi7_obj.values,
+                        backgroundColor: [
+                        'rgb(255, 0, 0)',
+                        'rgb(8, 0, 255)',
+                        'rgb(255, 148, 18)',
+                        ],
+                        borderColor: [
+                        'rgb(255, 0, 0)',
+                        'rgb(8, 0, 255)',
+                        'rgb(255, 148, 18)',
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    grid: {
+                        display: false
+                    },
+                    beginAtZero: true,
+                    ticks: {
+                        display: false
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+
+
+
+
+
+    const ctx7_did = document.getElementById('kpi7_did');
+    const myChart7_did = new Chart(ctx7_did, {
+        type: 'bar',
+        data: {
+            labels: kpi7_did_obj.did,
+            datasets:
+                [
+                    {
+                        label: 'Decoded',
+                        data: kpi7_did_obj.Decoded,
+                        backgroundColor: [
+                        'rgb(8, 0, 255)',
+                        ],
+                        borderColor: [
+                        'rgb(8, 0, 255)',
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Error_Message',
+                        data: kpi7_did_obj.Error_Message,
+                        backgroundColor: [
+                        'rgb(255, 0, 0)',
+                        ],
+                        borderColor: [
+                        'rgb(255, 0, 0)',
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Negative_Response',
+                        data: kpi7_did_obj.Negative_Response,
+                        backgroundColor: [
+                        'rgb(255, 148, 18)',
+                        ],
+                        borderColor: [
+                        'rgb(255, 148, 18)',
+                        ],
+                        borderWidth: 1
+                    },
+                ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                },
+                x: {
+                    beginAtZero: true,
+                    stacked: true,
+                }
+            }
+        }
+    });
+
+
+
+
+    const ctx9_chart = document.getElementById('kpi9_chart');
+    const myChart9_chart = new Chart(ctx9_chart, {
+        type: 'doughnut',
+        data: {
+            labels: kpi9_chart_obj.label,
+            datasets: [{
+                label: '',
+                data: kpi9_chart_obj.values,
+                backgroundColor: [
+                'rgb(30, 230, 226)',
+                'rgb(255, 0, 0)',
+                'rgb(8, 0, 255)'
+                ],
+                borderColor: [
+                'rgb(30, 230, 226)',
+                'rgb(255, 0, 0)',
+                'rgb(8, 0, 255)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    grid: {
+                        display: false
+                    },
+                    beginAtZero: true,
+                    ticks: {
+                        display: false
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+
+
+
+
+    const ctx9_chart_did = document.getElementById('kpi9_chart_did');
+    const myChart9_chart_did = new Chart(ctx9_chart_did, {
+        type: 'bar',
+        data: {
+            labels: kpi9_chart_did_obj.did,
+            datasets:
+                [
+                    {
+                        label: 'GDX',
+                        data: kpi9_chart_did_obj.GDX,
+                        backgroundColor: [
+                        'rgb(255, 0, 0)',
+                        ],
+                        borderColor: [
+                        'rgb(255, 0, 0)',
+                        ],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'MDX',
+                        data: kpi9_chart_did_obj.MDX,
+                        backgroundColor: [
+                        'rgb(8, 0, 255)',
+                        ],
+                        borderColor: [
+                        'rgb(8, 0, 255)',
+                        ],
+                        borderWidth: 1
+                    },
+
+                    {
+                        label: 'Not_in_MDX/GDX',
+                        data: kpi9_chart_did_obj['Not_in_MDX/GDX'],
+                        backgroundColor: [
+                        'rgb(30, 230, 226)'
+                        ],
+                        borderColor: [
+                        'rgb(30, 230, 226)'
+                        ],
+                        borderWidth: 1
+                    },
+                    
+                ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                },
+                x: {
+                    beginAtZero: true,
+                    stacked: true,
+                }
+            }
+        }
+    });
+
+
+
+
+
+
+function abrirModal(e){
+    if(e.id === 'btn1') document.getElementById('tabela1').style.top = "0";
+    else if(e.id === 'btn2') document.getElementById('tabela2').style.top = "0";
+    else if(e.id === 'null'){
+        document.getElementById('tabela3').style.top = "0";
+        document.getElementById('mod-G').style.height = "550px"
+    } 
+}
+
+function fecharModal(){
+    document.getElementById('tabela1').style.top = "-100%";
+    document.getElementById('tabela2').style.top = "-100%";
+    document.getElementById('tabela3').style.top = "-300%";
+
+}
+
+</script>
+{% endblock content %}

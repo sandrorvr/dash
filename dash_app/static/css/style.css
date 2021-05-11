@@ -1,0 +1,92 @@
+
+body{
+    background-color: rgb(53, 33, 88);
+    color: rgb(255, 255, 255);
+}
+
+.board{
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 185px;
+}
+
+.board-pie{
+    height: 180px;
+}
+
+.board-pie-G{
+    height: 250px;
+}
+
+.board-pie-conj{
+    height: 200px;
+}
+
+.board-bar-conj{
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 200px;
+}
+
+
+
+.title{
+    text-align: center;
+}
+
+td, th{
+    text-align: center;
+    font-size: 0.7rem;
+    border: none;
+    color: white;
+}
+
+
+table{
+    width: 30%;
+    /*height: 91%;*/
+}
+
+tr:nth-child(even) {background-color: rgb(60, 38, 97);}
+
+
+.linha{
+    margin-top: 50px;
+}
+
+
+
+.mod-bg{
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: block;
+    transition: 300ms;
+    top: -100%;
+}
+
+
+.mod{
+    height: 300px;
+    width: 50%;
+    margin: 80px auto 0 auto;
+    background-color: blueviolet;
+    border-radius: 15px;
+}
+
+.mod span{
+    float: right;
+    font-size: 22px;
+    margin: 20px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.mod span:hover{
+    color: black;
+    transition: 300ms;
+}
+
+.butao{
+    color: white;
+}

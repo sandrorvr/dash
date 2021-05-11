@@ -1,0 +1,101 @@
+partition_country,kpi1,model_year,vin_hash,production_date,countNull_N_expected,vin,vin_vl,response_ecu_id,did_id,partition_region,kpi9,derived_event,kpi2,vehicle_line,sell_country,kpi5,kpi6,kpi7,kpi4,countNull_expected
+BR,Negative Response,2018,13,2021-08-01,0,2,3,0x0452,p,EU,MDX,2020-05-15,Error Parsing Message,Model6,BR,Min_Max_Not_Found,Not_duplicated,Decoded,Byte Size Error,1
+BR,Negative Response,2019,8,2021-01-07,1,4,11,0x7891,p,AP,No Response,2020-05-15,Error Parsing Message,Model2,BR,In_range,Not_duplicated,Decoded,No Byte Size Error,4
+BR,Null Response,2017,23,2010-05-21,1,4,15,0x9876,r,MULTI,Not in MDX/GDX,2021-01-07,Subfield Error,Model6,BR,In_range,Not_duplicated,Decoded,No Error,1
+BR,Positive Response,2019,3,2021-01-07,1,8,21,0x0012,z,partition_region,Not in MDX/GDX,2020-05-15,Error Parsing Message,Model1,BR,In_range,duplicated,Decoded,No Error,0
+BR,Null Response,2021,8,2021-08-01,0,0,3,0x7831,x,EU,GDX,2020-05-15,Success,Model1,BR,Not_applicable,duplicated,Decoded,Byte Size Error,4
+BR,Negative Response,2019,0,2021-01-07,2,0,19,0x0012,l,partition_region,GDX,2020-05-15,Error Parsing Message,Model1,BR,Min_Max_Not_Found,duplicated,Decoded,No Error,4
+BR,Null Response,2017,22,2020-09-28,0,7,6,0x5678,d,UNKNOWN,Not Decoded,2010-05-21,Success,Model1,BR,In_range,Not_duplicated,Error Message,No Byte Size Error,3
+BR,Positive Response,2018,1,2021-01-07,2,16,15,0x0720,i,AP,No Response,2020-09-28,Subfield Error,Model3,BR,In_range,duplicated,Negative Response,No Error,4
+BR,Positive Response,2018,21,2021-01-07,1,13,13,0x0452,s,partition_region,MDX,2020-09-28,Error Parsing Message,Model2,BR,Min_Max_Not_Found,duplicated,Decoded,No Byte Size Error,4
+BR,Positive Response,2020,19,2021-08-01,2,10,16,0x9876,d,UNKNOWN,Not Decoded,2010-05-21,Subfield Error,model3,BR,Min_Max_Not_Found,Not_duplicated,Error Message,Byte Size Error,2
+BR,Null Response,2017,24,2021-01-07,1,1,18,0x0720,a,AP,Not Decoded,2020-05-15,Negative Response,Model1,BR,In_range,duplicated,Negative Response,No Byte Size Error,4
+BR,Positive Response,2019,14,2020-05-15,0,3,0,0x0720,d,UNKNOWN,No Response,2021-01-07,Decode File Not Found,model3,BR,Not_applicable,duplicated,Error Message,No Error,0
+BR,Null Response,2021,13,2021-08-01,1,18,10,0x0720,g,MULTI,Not Decoded,2021-01-07,Subfield Error,Modek12,BR,Min_Max_Not_Found,duplicated,Decoded,Byte Size Error,3
+BR,Null Response,2017,17,2021-08-01,1,12,0,0x7891,o,partition_region,Not Decoded,2021-08-01,Decode File Not Found,Modek12,BR,Not_applicable,duplicated,Decoded,No Error,1
+BR,Positive Response,2021,8,2010-05-21,0,17,14,0x0452,x,EU,MDX,2020-09-28,Response Empty,Model1,BR,Not_applicable,duplicated,Negative Response,No Byte Size Error,1
+BR,Negative Response,2017,23,2020-05-15,2,22,11,0x5678,r,UNKNOWN,GDX,2021-08-01,Error Parsing Message,Model2,BR,Min_Max_Not_Found,duplicated,Decoded,No Error,0
+BR,Negative Response,2019,23,2021-08-01,0,5,15,0x5555,r,partition_region,MDX,2010-05-21,Decode File Not Found,Model1,BR,Not_applicable,Not_duplicated,Decoded,Byte Size Error,4
+BR,Null Response,2017,8,2020-05-15,1,8,8,0x0720,l,UNKNOWN,GDX,2021-01-07,Success,model3,BR,In_range,duplicated,Decoded,No Byte Size Error,0
+BR,Null Response,2019,8,2021-08-01,0,1,14,0x7891,r,EU,MDX,2021-01-07,Response Empty,Model3,BR,Min_Max_Not_Found,duplicated,Decoded,No Byte Size Error,1
+BR,Null Response,2020,19,2010-05-21,1,23,17,0x0812,l,EU,Not Decoded,2021-08-01,Decode File Not Found,model3,BR,Not_applicable,duplicated,Error Message,Byte Size Error,4
+BR,Positive Response,2017,23,2021-01-07,1,9,5,0x5678,m,EU,No Response,2020-05-15,Subfield Error,Model2,BR,Not_applicable,Not_duplicated,Negative Response,No Error,0
+BR,Negative Response,2019,18,2021-08-01,0,21,5,0x0720,i,MULTI,Not Decoded,2020-05-15,Response Empty,Model6,BR,In_range,duplicated,Error Message,No Byte Size Error,1
+BR,Positive Response,2018,13,2020-05-15,0,16,7,0x9876,f,,Not Decoded,2020-05-15,Response Empty,Model2,BR,Not_applicable,duplicated,Error Message,No Error,3
+BR,Negative Response,2017,23,2010-05-21,2,21,11,0x5678,x,partition_region,GDX,2020-09-28,Success,model3,BR,In_range,Not_duplicated,Error Message,No Error,4
+BR,Null Response,2017,14,2010-05-21,0,0,18,0x0812,x,,Not Decoded,2020-09-28,Subfield Error,Model3,BR,Min_Max_Not_Found,Not_duplicated,Error Message,Byte Size Error,1
+BR,Negative Response,2020,21,2020-05-15,1,9,9,0x0720,p,UNKNOWN,MDX,2020-05-15,Subfield Error,Model6,BR,Min_Max_Not_Found,Not_duplicated,Negative Response,No Byte Size Error,3
+BR,Positive Response,2021,23,2021-08-01,2,6,11,0x7891,p,EU,No Response,2020-05-15,Success,Model1,BR,Min_Max_Not_Found,duplicated,Decoded,No Error,4
+BR,Negative Response,2018,24,2021-08-01,0,16,23,0x5678,e,partition_region,Not in MDX/GDX,2020-09-28,Decode File Not Found,Model6,BR,Not_applicable,duplicated,Error Message,Byte Size Error,0
+BR,Positive Response,2019,18,2021-01-07,1,16,16,0x0452,k,MULTI,No Response,2020-05-15,Response Empty,model3,BR,Min_Max_Not_Found,duplicated,Error Message,No Byte Size Error,0
+BR,Negative Response,2017,1,2021-01-07,2,11,8,0x5678,r,EU,Not in MDX/GDX,2021-01-07,Response Empty,model3,BR,Min_Max_Not_Found,Not_duplicated,Negative Response,Byte Size Error,4
+BR,Positive Response,2017,15,2021-01-07,2,8,0,0x0452,u,AP,MDX,2020-09-28,Response Empty,Model1,BR,In_range,duplicated,Decoded,Byte Size Error,1
+BR,Positive Response,2020,0,2020-05-15,1,16,12,0x1111,u,partition_region,GDX,2010-05-21,Error Parsing Message,Model1,BR,In_range,duplicated,Decoded,Byte Size Error,1
+BR,Positive Response,2020,0,2020-05-15,1,24,22,0x5555,r,UNKNOWN,MDX,2021-01-07,Decode File Not Found,Modek12,BR,In_range,duplicated,Negative Response,Byte Size Error,2
+BR,Positive Response,2020,12,2021-01-07,0,9,17,0x7891,h,,Not in MDX/GDX,2020-09-28,Subfield Error,model3,BR,Not_applicable,duplicated,Error Message,No Error,1
+BR,Negative Response,2020,24,2021-08-01,0,6,13,0x0452,v,partition_region,Not Decoded,2021-01-07,Success,model3,BR,Min_Max_Not_Found,duplicated,Error Message,No Error,4
+BR,Negative Response,2018,1,2020-09-28,2,12,14,0x5678,d,EU,Not Decoded,2020-09-28,Success,Model1,BR,Not_applicable,duplicated,Decoded,No Error,4
+BR,Null Response,2021,15,2010-05-21,0,16,3,0x5678,g,AP,Not in MDX/GDX,2020-05-15,Subfield Error,Modek12,BR,In_range,duplicated,Error Message,Byte Size Error,3
+BR,Negative Response,2019,20,2021-08-01,2,3,20,0x5678,k,UNKNOWN,MDX,2020-05-15,Error Parsing Message,Model1,BR,In_range,Not_duplicated,Negative Response,No Error,3
+BR,Null Response,2018,24,2020-09-28,1,17,1,0x0812,d,,GDX,2010-05-21,Negative Response,Model1,BR,Min_Max_Not_Found,duplicated,Error Message,No Byte Size Error,0
+BR,Positive Response,2019,0,2020-09-28,1,21,0,0x1111,v,partition_region,MDX,2020-09-28,Error Parsing Message,Model2,BR,Not_applicable,duplicated,Negative Response,No Byte Size Error,2
+BR,Negative Response,2020,1,2020-09-28,0,23,17,0x5678,f,UNKNOWN,No Response,2020-05-15,Decode File Not Found,Model1,BR,Min_Max_Not_Found,duplicated,Error Message,No Byte Size Error,2
+BR,Positive Response,2021,8,2020-05-15,1,2,20,0x0012,g,AP,Not Decoded,2010-05-21,Response Empty,Model1,BR,In_range,duplicated,Error Message,No Byte Size Error,3
+BR,Positive Response,2019,1,2021-01-07,1,19,8,0x0452,s,AP,MDX,2020-09-28,Negative Response,model3,BR,Min_Max_Not_Found,Not_duplicated,Error Message,Byte Size Error,3
+BR,Positive Response,2017,13,2020-09-28,2,2,19,0x1111,r,,GDX,2010-05-21,Error Parsing Message,Model3,BR,In_range,duplicated,Error Message,Byte Size Error,4
+BR,Null Response,2018,5,2020-05-15,0,2,12,0x0720,h,MULTI,MDX,2021-01-07,Subfield Error,Model2,BR,In_range,duplicated,Negative Response,No Byte Size Error,0
+BR,Positive Response,2017,16,2020-05-15,1,5,24,0x0452,l,MULTI,Not in MDX/GDX,2010-05-21,Response Empty,Modek12,BR,In_range,Not_duplicated,Decoded,No Error,3
+BR,Positive Response,2018,4,2010-05-21,0,11,2,0x0720,s,UNKNOWN,Not Decoded,2010-05-21,Error Parsing Message,Modek12,BR,In_range,duplicated,Error Message,Byte Size Error,2
+BR,Positive Response,2018,7,2021-08-01,0,23,13,0x7891,g,AP,Not Decoded,2020-09-28,Response Empty,Modek12,BR,Min_Max_Not_Found,Not_duplicated,Decoded,No Error,0
+BR,Negative Response,2018,13,2020-05-15,2,3,16,0x7891,l,UNKNOWN,GDX,2021-01-07,Subfield Error,Model1,BR,In_range,duplicated,Error Message,Byte Size Error,0
+BR,Negative Response,2018,20,2020-09-28,0,6,14,0x5678,d,,No Response,2020-09-28,Decode File Not Found,Model1,BR,Not_applicable,Not_duplicated,Error Message,Byte Size Error,0
+BR,Negative Response,2018,12,2021-01-07,1,14,19,0x1111,i,,No Response,2020-09-28,Success,Model1,BR,In_range,Not_duplicated,Decoded,No Byte Size Error,1
+BR,Negative Response,2018,6,2020-09-28,1,1,15,0x0812,v,EU,Not in MDX/GDX,2020-05-15,Decode File Not Found,Model1,BR,Not_applicable,Not_duplicated,Negative Response,No Error,2
+BR,Positive Response,2019,4,2010-05-21,1,12,24,0x0720,e,partition_region,No Response,2020-05-15,Negative Response,Model1,BR,In_range,Not_duplicated,Error Message,No Error,0
+BR,Null Response,2021,8,2010-05-21,1,15,19,0x0812,s,partition_region,MDX,2020-05-15,Success,Model1,BR,In_range,duplicated,Decoded,No Byte Size Error,2
+BR,Positive Response,2018,2,2020-09-28,2,0,14,0x7891,d,MULTI,No Response,2021-01-07,Decode File Not Found,Modek12,BR,Not_applicable,duplicated,Decoded,No Byte Size Error,0
+BR,Negative Response,2017,12,2010-05-21,0,14,16,0x7891,k,AP,GDX,2020-09-28,Decode File Not Found,Model1,BR,Not_applicable,Not_duplicated,Decoded,No Error,4
+BR,Negative Response,2021,3,2021-08-01,0,23,8,0x9876,w,,GDX,2010-05-21,Success,Model1,BR,Not_applicable,duplicated,Error Message,No Byte Size Error,2
+BR,Null Response,2020,20,2020-09-28,1,7,3,0x7831,p,EU,No Response,2020-09-28,Decode File Not Found,Model6,BR,In_range,duplicated,Error Message,Byte Size Error,2
+BR,Negative Response,2021,14,2020-09-28,1,11,18,0x0812,l,partition_region,GDX,2020-05-15,Negative Response,model3,BR,Min_Max_Not_Found,Not_duplicated,Negative Response,Byte Size Error,2
+BR,Positive Response,2017,16,2020-05-15,1,23,3,0x0812,g,UNKNOWN,MDX,2020-09-28,Subfield Error,Model2,BR,In_range,duplicated,Negative Response,Byte Size Error,0
+BR,Negative Response,2020,18,2021-01-07,1,4,10,0x7831,a,partition_region,No Response,2010-05-21,Subfield Error,Model1,BR,Min_Max_Not_Found,Not_duplicated,Negative Response,No Error,0
+BR,Negative Response,2021,3,2021-01-07,1,19,12,0x1111,d,UNKNOWN,GDX,2021-08-01,Error Parsing Message,model3,BR,Min_Max_Not_Found,Not_duplicated,Decoded,No Error,0
+BR,Null Response,2021,23,2021-01-07,2,22,22,0x1111,l,AP,MDX,2021-08-01,Response Empty,Modek12,BR,Min_Max_Not_Found,Not_duplicated,Negative Response,No Error,4
+BR,Positive Response,2021,22,2020-09-28,2,6,2,0x0812,s,EU,No Response,2020-09-28,Negative Response,Model1,BR,Not_applicable,Not_duplicated,Negative Response,Byte Size Error,1
+BR,Null Response,2018,6,2010-05-21,0,18,11,0x5678,r,AP,GDX,2021-01-07,Subfield Error,Modek12,BR,Not_applicable,duplicated,Decoded,Byte Size Error,3
+BR,Null Response,2017,11,2021-01-07,1,0,7,0x7831,f,UNKNOWN,No Response,2010-05-21,Decode File Not Found,Model1,BR,Min_Max_Not_Found,Not_duplicated,Error Message,No Error,1
+BR,Null Response,2019,10,2010-05-21,1,5,14,0x1111,i,AP,No Response,2020-09-28,Negative Response,model3,BR,Not_applicable,Not_duplicated,Error Message,No Byte Size Error,4
+BR,Null Response,2021,21,2020-09-28,0,1,24,0x9876,k,EU,GDX,2010-05-21,Success,Modek12,BR,In_range,duplicated,Negative Response,No Byte Size Error,1
+BR,Null Response,2018,16,2021-08-01,2,22,21,0x7831,g,partition_region,Not in MDX/GDX,2020-09-28,Decode File Not Found,Modek12,BR,In_range,duplicated,Negative Response,Byte Size Error,4
+BR,Null Response,2020,22,2020-05-15,0,23,1,0x7891,o,UNKNOWN,No Response,2020-09-28,Success,Model2,BR,Not_applicable,duplicated,Error Message,No Error,0
+BR,Null Response,2021,21,2010-05-21,2,19,1,0x7891,v,MULTI,Not Decoded,2021-01-07,Subfield Error,Model1,BR,Not_applicable,Not_duplicated,Negative Response,Byte Size Error,0
+BR,Null Response,2017,1,2021-08-01,1,15,8,0x1111,i,MULTI,Not Decoded,2020-05-15,Success,Model1,BR,Min_Max_Not_Found,duplicated,Decoded,No Byte Size Error,0
+BR,Negative Response,2019,7,2020-09-28,1,12,20,0x1111,a,MULTI,No Response,2010-05-21,Subfield Error,Model2,BR,In_range,Not_duplicated,Negative Response,No Byte Size Error,1
+BR,Negative Response,2019,0,2010-05-21,2,20,17,0x0720,r,partition_region,No Response,2021-08-01,Decode File Not Found,Modek12,BR,In_range,duplicated,Error Message,No Byte Size Error,4
+BR,Negative Response,2021,3,2010-05-21,2,13,11,0x0720,t,partition_region,Not in MDX/GDX,2020-09-28,Error Parsing Message,model3,BR,Not_applicable,Not_duplicated,Decoded,Byte Size Error,2
+BR,Positive Response,2021,19,2021-01-07,2,14,0,0x7891,g,EU,GDX,2020-09-28,Subfield Error,Model1,BR,In_range,duplicated,Negative Response,No Byte Size Error,0
+BR,Positive Response,2020,1,2020-09-28,2,10,1,0x0720,s,MULTI,Not in MDX/GDX,2010-05-21,Decode File Not Found,Model1,BR,Min_Max_Not_Found,Not_duplicated,Error Message,No Error,4
+BR,Negative Response,2019,20,2021-08-01,2,11,18,0x5678,d,UNKNOWN,GDX,2010-05-21,Response Empty,Modek12,BR,Not_applicable,duplicated,Negative Response,No Byte Size Error,0
+BR,Negative Response,2021,19,2021-08-01,0,22,14,0x7891,d,AP,Not Decoded,2010-05-21,Success,Model2,BR,Min_Max_Not_Found,duplicated,Decoded,Byte Size Error,4
+BR,Null Response,2017,11,2010-05-21,2,2,9,0x0812,e,partition_region,Not in MDX/GDX,2020-05-15,Decode File Not Found,Model1,BR,Min_Max_Not_Found,Not_duplicated,Negative Response,No Byte Size Error,2
+BR,Null Response,2020,20,2021-08-01,2,3,2,0x1111,d,MULTI,Not Decoded,2010-05-21,Response Empty,Model1,BR,Min_Max_Not_Found,Not_duplicated,Decoded,Byte Size Error,1
+BR,Positive Response,2019,1,2010-05-21,2,9,24,0x5678,l,MULTI,No Response,2020-09-28,Subfield Error,Model2,BR,Min_Max_Not_Found,duplicated,Negative Response,No Byte Size Error,0
+BR,Negative Response,2021,5,2021-01-07,0,23,14,0x0452,a,UNKNOWN,Not in MDX/GDX,2021-01-07,Error Parsing Message,Modek12,BR,Min_Max_Not_Found,duplicated,Error Message,No Byte Size Error,3
+BR,Negative Response,2017,19,2010-05-21,2,4,9,0x7891,h,UNKNOWN,No Response,2010-05-21,Error Parsing Message,model3,BR,Min_Max_Not_Found,Not_duplicated,Error Message,No Byte Size Error,0
+BR,Null Response,2021,16,2020-05-15,2,23,13,0x1111,l,EU,MDX,2010-05-21,Response Empty,model3,BR,In_range,duplicated,Negative Response,Byte Size Error,2
+BR,Null Response,2018,11,2021-08-01,1,5,1,0x7831,a,EU,GDX,2010-05-21,Subfield Error,Modek12,BR,Not_applicable,duplicated,Decoded,No Byte Size Error,3
+BR,Positive Response,2017,16,2010-05-21,2,6,19,0x0812,k,partition_region,No Response,2010-05-21,Negative Response,Model1,BR,Not_applicable,duplicated,Error Message,No Byte Size Error,4
+BR,Null Response,2019,24,2020-05-15,2,4,23,0x5678,d,UNKNOWN,Not Decoded,2020-05-15,Response Empty,Modek12,BR,Not_applicable,duplicated,Negative Response,No Error,0
+BR,Null Response,2020,7,2021-01-07,1,13,1,0x5678,i,MULTI,Not in MDX/GDX,2020-09-28,Error Parsing Message,model3,BR,Min_Max_Not_Found,duplicated,Negative Response,Byte Size Error,1
+BR,Negative Response,2020,12,2020-05-15,2,16,23,0x0452,n,,No Response,2020-09-28,Subfield Error,Model2,BR,Min_Max_Not_Found,duplicated,Error Message,No Error,0
+BR,Null Response,2021,13,2010-05-21,1,5,21,0x0452,v,AP,MDX,2021-01-07,Negative Response,Model2,BR,In_range,duplicated,Negative Response,No Byte Size Error,4
+BR,Negative Response,2019,14,2021-08-01,0,21,13,0x1111,r,EU,Not Decoded,2020-05-15,Error Parsing Message,model3,BR,In_range,Not_duplicated,Error Message,No Error,2
+BR,Negative Response,2020,15,2021-08-01,2,8,15,0x0452,a,UNKNOWN,No Response,2010-05-21,Negative Response,Model1,BR,In_range,Not_duplicated,Negative Response,Byte Size Error,3
+BR,Null Response,2018,13,2020-09-28,1,10,24,0x7891,l,partition_region,GDX,2020-05-15,Response Empty,Model2,BR,In_range,Not_duplicated,Negative Response,No Byte Size Error,0
+BR,Negative Response,2020,11,2020-05-15,1,5,6,0x7891,o,UNKNOWN,Not in MDX/GDX,2020-05-15,Decode File Not Found,Model1,BR,Not_applicable,duplicated,Decoded,Byte Size Error,1
+BR,Positive Response,2020,6,2020-05-15,2,0,22,0x0720,s,MULTI,MDX,2020-09-28,Subfield Error,Modek12,BR,Not_applicable,duplicated,Error Message,Byte Size Error,1
+BR,Negative Response,2021,12,2021-08-01,1,16,16,0x0720,h,,MDX,2021-08-01,Subfield Error,Model1,BR,Min_Max_Not_Found,Not_duplicated,Error Message,Byte Size Error,4
+BR,Positive Response,2021,7,2021-08-01,1,8,0,0x0720,v,AP,No Response,2020-05-15,Success,Model2,BR,Not_applicable,duplicated,Decoded,No Byte Size Error,1
+BR,Positive Response,2017,4,2020-05-15,2,17,1,0x1111,a,MULTI,MDX,2021-01-07,Negative Response,Model3,BR,In_range,duplicated,Decoded,No Error,2
+BR,Positive Response,2020,0,2010-05-21,1,2,23,0x7891,j,partition_region,Not Decoded,2010-05-21,Response Empty,Model6,BR,In_range,Not_duplicated,Negative Response,Byte Size Error,1
