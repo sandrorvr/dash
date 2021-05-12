@@ -5,7 +5,7 @@ import pandas as pd
 import random
 import json
 
-data = pd.read_csv('./scriptAux/bd_novo.csv')
+data = pd.read_csv('./scriptAux/bd__novo.csv')
 
 context = {}
 
@@ -34,7 +34,7 @@ def fKPI2():
     label = ['_'.join(i.split(' ')) for i in label]
     values = data['kpi2'].value_counts().values
     total = sum(values)
-    values = [(i/total)*100 for i in values]
+    values = [round((i/total)*100,2) for i in values]
 
     for i in range(len(values)):
         dic[label[i]] =values[i]
@@ -83,14 +83,14 @@ def fDescribe2():
 
 def fKPI3():
     dic = {}
-    kpi1 = pd.crosstab(data.did_id, data.kpi1)
+    kpi3 = pd.crosstab(data.did_id, data.kpi3)
 
-    for col in kpi1.columns:
+    for col in kpi3.columns:
         key = '_'.join(col.split(' '))
-        dic[key] = list(kpi1.loc[:,col].values)
+        dic[key] = list(kpi3.loc[:,col].values)
     
-    dic['did'] = list(kpi1.index)
-    dic['color'] = generateColor(len(kpi1.columns))
+    dic['did'] = list(kpi3.index)
+    dic['color'] = generateColor(len(kpi3.columns))
     
     return dic
 
